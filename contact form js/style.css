@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e0f1e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 736px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+h1 {
+  color: var(--grey-900);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: -1px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--grey-900);
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.query-options .radio-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid var(--grey-500);
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 12px;
+  transition: all 0.2s ease;
+  margin-bottom: 0;
+}
+
+.radio-card:has(input:checked) {
+  background-color: var(--green-200);
+  border-color: var(--green-600);
+}
+
+input[type="radio"] {
+  accent-color: var(--green-600);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+}
+
+.submit {
+  width: 100%;
+  background-color: #0c7d69;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 8px;
+  color: #ff7979;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.red-border {
+  border-color: #ff7979;
+}
+
+.red-border::placeholder {
+  color: #ff7979;
+}
+
+.hidden {
+  display: none;
+}
